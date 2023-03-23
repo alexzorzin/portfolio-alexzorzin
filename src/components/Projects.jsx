@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { useFetch } from "@/hooks/useFetch";
-import CardProjects from "./cardProjects";
+import CardProjects from "./CardProjects";
 import { useApiContext } from "./context/Context";
 import english from './languages/en/global.json';
 import spanish from './languages/es/global.json';
