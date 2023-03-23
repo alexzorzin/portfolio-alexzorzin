@@ -25,7 +25,7 @@ const Projects = () => {
         <>
 
             <section id="projects" className="py-5 container px-sm-5  blur-background-about mt-presentation">
-                <div className="ms-4">
+                <div className="center">
                     <h1 className="display-3 mb-5 ms-1 ms-sm-4 pt-5 text-white">{language === 'es' ? `${spanish?.projects?.title}` : `${english?.projects?.title}`}</h1>
                 </div>
 
