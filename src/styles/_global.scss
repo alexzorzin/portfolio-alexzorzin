@@ -115,3 +115,15 @@ html body {
         scroll-margin-top: 9em;
     }
 }
+
+@media (max-height: 700px){
+    #about-me{
+        scroll-padding: 100px;
+        scroll-margin-top: 8em;
+    }
+    #projects{
+        scroll-padding: 100px;
+        scroll-margin-top: 7.5em;
+        height: 100vh;
+    }
+}
