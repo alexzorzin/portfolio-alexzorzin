@@ -48,7 +48,7 @@ const Projects = () => {
                         }}
                     >
                         {data?.projects?.map((project) => (
-                            <SwiperSlide className="card-project">
+                            <SwiperSlide key={project.id} className="card-project">
 
                                 <CardProjects
 
