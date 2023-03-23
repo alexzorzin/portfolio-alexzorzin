@@ -247,7 +247,7 @@ header {
 }
 
 .navbar.active .nav__menu-list {
-  color: black !important;
+  color: white !important;
 }
 
 .logo {
@@ -298,7 +298,7 @@ header {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   min-height: calc(35vh - 60px);
-  background-color: white;
+  background-color: #222;
   color: #000000;
   padding-bottom: 60px;
 }
