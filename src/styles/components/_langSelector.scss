@@ -1,0 +1,90 @@
+#language{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background: linear-gradient(45deg, #363636, #1a324e);
+    position: fixed;
+    overflow: hidden!important;
+    // transition: all 0.5s;
+    transition: all 0.43s;
+    z-index: 100;
+}
+
+ $glass: #1a3441;
+  $glass-icon: #192e37;
+  $option: #00364d;
+.language-selector{
+ /* Reset */
+ appearance: none;
+ border: 0;
+ outline: 0;
+ font: inherit;
+ /* Personalize */
+ width: 6em;
+ height: 3em;
+ padding: 0 4em 0 1em;
+ background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+     no-repeat right 0.8em center / 1.4em,
+   linear-gradient(to left, $glass-icon 3em, $glass 3em);
+ color: white;
+ border-radius: 0.25em;
+ box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+ /* <option> colors */
+ option {
+   color: inherit;
+   background-color: $option;
+ }
+ /* Remove focus outline */
+ &:focus {
+   outline: none;
+ }
+ /* Remove IE arrow */
+ &::-ms-expand {
+   display: none;
+ }
+}
+
+.language-selector:hover{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+     no-repeat right 0.8em center / 1.4em,
+   linear-gradient(to left, $glass-icon 3em, $glass 3em);
+}
+
+.btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    background-color: #1a324e00!important;
+    border-color: #00000000!important;
+}
+
+.dropdown-toggle::after {
+   display: none!important;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus{
+    background-color: #0b5dd700;
+    border-color: #0a57ca00;
+    box-shadow: 0 0 0 0.25rem rgba(49, 131, 253, 0);
+}
+
+.dropdown-menu {
+    min-width: 6rem;
+    background-color: #00364d;
+}
+.dropdown-item {
+    color: white!important;
+}
+.dropdown-item:focus {
+    color: white!important;
+    background-color: #00000000!important;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+     no-repeat right 0.8em center / 1.4em,
+   linear-gradient(to left, $glass 3em);
+}
+.dropdown-item:hover {
+    color: white!important;
+    background-color: #00000000!important;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+     no-repeat right 0.8em center / 1.4em,
+   linear-gradient(to left, $glass 3em);
+}
+

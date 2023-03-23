@@ -1,0 +1,28 @@
+{
+    "presentation":{
+        "title": "Hello! I'm Alex Zorzin",
+        "subtitle": "FULL-STACK WEB DEVELOPER"
+    },
+    "aboutMe":{
+        "title": "ABOUT ME",
+        "content": "My name is Alex Zorzin and I'm a Full-Stack web developer from Buenos Aires, Argentina. I'm interested in starting my career as a developer and I'm looking for opportunities in order to improve and learn actively in an innovative team. My goal is to work on exciting and challenging projects so I can apply my skills and knowledge in a practical way and keep learning constantly. I am passionate about the programming field and am willing to go the extra mile to be a valuable asset to any development team."
+    },
+    "projects":{
+        "title": "PROJECTS"
+    },
+    "skills":{
+        "title": "SKILLS"
+    },
+    "contact":{
+        "title": "CONTACT",
+        "input1": "Name",
+        "input2": "Email",
+        "input3": "Message",
+        "input4": "Submit"
+    },
+    "cvLink":{
+        "link": "https://drive.google.com/uc?id=1LA2P6ZkFvHzgWpWvJJ-pSzCJsidVW4cz&export=download"
+    }
+
+
+}

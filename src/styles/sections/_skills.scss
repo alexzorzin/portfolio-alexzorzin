@@ -1,0 +1,43 @@
+.img-circle{
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    margin-left: 0.6em;
+    margin-top: 0.5em;
+}
+.card-skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    height: 450px;
+    background-clip: border-box;
+    border-radius: 1rem;
+}
+
+.card-skills .mx-5:first-child {
+    background: linear-gradient(45deg,#363636,#1a324e); /* Color de fondo deseado */
+  }
+
+
+.card-skills .user {
+    display: block;
+    height: 120px;
+    margin: -55px auto 0;
+    overflow: hidden;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.content {
+    padding: 90px 10px;
+    color: white;
+}
+
+.card-skills .cover {
+    height: 105px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}

@@ -1,0 +1,18 @@
+.me {
+    width: 60%;
+}
+
+@media (min-width:768px) {
+    .me {
+        width: 25%;
+    }
+    .w-lg-25{
+        width: 25%!important;
+    }
+}
+
+@media (min-width:500px) and (max-width: 768px) {
+    .me{
+        width: 40%;
+    }
+}
