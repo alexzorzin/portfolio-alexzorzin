@@ -1106,11 +1106,10 @@ section.masthead .masthead-content .masthead-subheading {
   color: white;
   height: 85px;
   bottom: 0px;
-  border-radius: 0 !important;
+  border-radius: 0 0 3.5px 3.5px !important;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, rgba(0, 0, 0, 0.444)), color-stop(81%, rgba(0, 0, 0, 0.6)));
   background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.444) 50%, rgba(0, 0, 0, 0.6) 81%);
   opacity: 1 !important;
-  border-radius: 0px 20px 20px 20px;
   padding: 7px 16px;
 }
 
@@ -1162,22 +1161,6 @@ section.masthead .masthead-content .masthead-subheading {
   swiper-container {
     width: 1170px !important;
   }
-  .card-project .card-project-footer {
-    opacity: 0;
-    position: absolute;
-    top: 7em;
-    width: 264px !important;
-    height: 29px !important;
-    color: white;
-    height: 80px;
-    bottom: 0px;
-    border-radius: 0 !important;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, rgba(0, 0, 0, 0.444)), color-stop(81%, rgba(0, 0, 0, 0.6)));
-    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.444) 50%, rgba(0, 0, 0, 0.6) 81%);
-    opacity: 1 !important;
-    border-radius: 0px 20px 20px 20px;
-    padding: 7px 16px;
-  }
   @-webkit-keyframes slide-in-bottom {
     0% {
       -webkit-transform: translateY(10px);
@@ -1202,13 +1185,13 @@ section.masthead .masthead-content .masthead-subheading {
       opacity: 1;
     }
   }
-  .swiper-button-next,
-  .swiper-rtl .swiper-button-prev {
+  .card-project .swiper-button-next,
+  .card-project .swiper-rtl .swiper-button-prev {
     color: white !important;
     padding-left: 0.25em !important;
   }
-  .swiper-button-prev,
-  .swiper-rtl .swiper-button-next {
+  .card-project .swiper-button-prev,
+  .card-project .swiper-rtl .swiper-button-next {
     color: white !important;
     padding-right: 0.25em !important;
   }
@@ -1255,6 +1238,46 @@ section.masthead .masthead-content .masthead-subheading {
   .card-project .card-image {
     height: 110px;
     width: 180px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-project .card-project-footer {
+    opacity: 0;
+    position: absolute;
+    top: 7.7em;
+    width: 290px !important;
+    height: 29px !important;
+    color: white;
+    height: 80px;
+    bottom: 0px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, rgba(0, 0, 0, 0.444)), color-stop(81%, rgba(0, 0, 0, 0.6)));
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.444) 50%, rgba(0, 0, 0, 0.6) 81%);
+    opacity: 1 !important;
+    border-radius: 0 0 3.5px 3.5px !important;
+    padding: 7px 16px;
+  }
+  .card-project .card-project-footer .deployIfNoRepo {
+    position: absolute;
+    left: 15.5em;
+    bottom: 0.4em;
+    text-decoration: none;
+  }
+  .card-project .card-project-footer .repo {
+    position: absolute;
+    left: 15.5em;
+    bottom: 0.4em;
+    text-decoration: none;
+  }
+  .card-project .card-project-footer .deploy {
+    position: absolute;
+    left: 13.5em;
+    bottom: 0.4em;
+    text-decoration: none;
+  }
+  .card-project .card-image {
+    height: 152px !important;
+    width: 290px !important;
   }
 }
 

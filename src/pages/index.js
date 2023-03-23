@@ -17,14 +17,6 @@ export default function Home() {
 
   useEffect(() => {
     console.error = () => { }; console.warn = () => { }; setTimeout(() => { console.clear(); }, 700);
-    // if (typeof window !== "undefined" && asPath == '/') {
-    //   const body = document.getElementsByTagName('body')[0];
-    //   body.style.background = "linear-gradient(to bottom, rgb(32, 32, 32), rgb(32, 32, 32))";
-
-    //   window.addEventListener('load', () => {
-    //     body.style.background = "linear-gradient(to bottom, rgb(32, 32, 32), rgb(32, 32, 32))";
-    //   });
-    // }
   }, []);
 
   const [loading, setLoading] = useState(true);
@@ -53,7 +45,6 @@ export default function Home() {
       <Loader loading={loading} />
       <canvas className="orb-canvas"></canvas>
       <UseContextProvider>
-        {/* {loading === false ? */}
           <>
             <LanguageSelector />
             <NavBar />
@@ -63,10 +54,6 @@ export default function Home() {
             <Skills />
             <Contact />
           </>
-        {/* //   :
-        //   null */}
-
-        {/* // } */}
       </UseContextProvider>
       <script type="module" src="./js/Bg-gradient.js"></script>
     </>
