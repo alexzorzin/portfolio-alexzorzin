@@ -105,6 +105,7 @@ strong {
   }
   .text-center-768 {
     text-align: center;
+    margin-left: 0 !important;
   }
 }
 
