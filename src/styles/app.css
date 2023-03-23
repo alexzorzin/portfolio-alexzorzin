@@ -30,7 +30,8 @@ body {
   place-items: center;
   font-family: var(--font-family);
   color: var(--dark-color);
-  background: var(--bg-gradient);
+  background: -webkit-gradient(linear, left top, left bottom, from(#202020), to(#202020));
+  background: linear-gradient(#202020, #202020);
 }
 
 .orb-canvas {
