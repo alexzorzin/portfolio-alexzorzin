@@ -59,7 +59,7 @@ const AboutMe = () => {
               <img
                 className="p-5 ms-4 ms-sm-5 mb-5 img-fluid w-75"
                 src="/img/computer.webp"
-                alt="..."
+                alt="computer"
               />
             </div>
             <div className="col-lg-6 col-12 order-lg-1">
