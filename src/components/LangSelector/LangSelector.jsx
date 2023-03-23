@@ -13,14 +13,14 @@ const LanguageSelector = () => {
     <>
       {
         language?.length === 0 &&
-        <section id="language" class="masthead text-center text-white">
-          <div class="masthead-content col-12">
+        <section id="language" className="masthead text-center text-white">
+          <div className="masthead-content col-12">
             <div >
               <h1>Seleccione el idioma</h1>
               <h1>Select language</h1>
               <div>
-                <button id="en" onClick={() => languages('en')} class="custom-btn btn-16 rounded">English</button>
-                <button id="es" onClick={() => languages('es')} class="custom-btn btn-16 rounded">Español</button>
+                <button id="en" onClick={() => languages('en')} className="custom-btn btn-16 rounded">English</button>
+                <button id="es" onClick={() => languages('es')} className="custom-btn btn-16 rounded">Español</button>
               </div>
             </div>
           </div>

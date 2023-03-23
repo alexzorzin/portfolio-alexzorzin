@@ -7,14 +7,14 @@ const Presentation = () => {
     return (
         <>
 
-            <section class="masthead text-center text-white">
-                <div class="masthead-content col-12">
-                    <div class="container">
+            <section className="masthead text-center text-white">
+                <div className="masthead-content col-12">
+                    <div className="container">
                         <div className="center">
                             <img className="me" src="/img/alex.webp" alt="" />
                         </div>
-                        <h1 class="masthead-heading-home mb-3">{language === 'es' ? `${spanish?.presentation?.title}` : `${english?.presentation?.title}`}</h1>
-                        <p class="masthead-subheading mb-0">{language === 'es' ? `${spanish?.presentation?.subtitle}` : `${english?.presentation?.subtitle}`}</p>
+                        <h1 className="masthead-heading-home mb-3">{language === 'es' ? `${spanish?.presentation?.title}` : `${english?.presentation?.title}`}</h1>
+                        <p className="masthead-subheading mb-0">{language === 'es' ? `${spanish?.presentation?.subtitle}` : `${english?.presentation?.subtitle}`}</p>
                         <div className="center mt-3 text-white small">
                             <svg className="me-2" xmlns="http://www.w3.org/2000/svg" width="15" height="19" viewBox="0 0 15 19" fill="none">
                                 <path d="M7.06179 4.46684C6.54779 4.46684 6.04533 4.61926 5.61795 4.90483C5.19058 5.19039 4.85748 5.59627 4.66078 6.07115C4.46408 6.54603 4.41261 7.06857 4.51289 7.57269C4.61317 8.07682 4.86068 8.53989 5.22414 8.90334C5.58759 9.2668 6.05066 9.51431 6.55478 9.61459C7.05891 9.71486 7.58145 9.6634 8.05633 9.4667C8.5312 9.27 8.93709 8.9369 9.22265 8.50952C9.50821 8.08214 9.66063 7.57968 9.66063 7.06568C9.65985 6.37667 9.38579 5.7161 8.89858 5.22889C8.41138 4.74168 7.75081 4.46763 7.06179 4.46684ZM7.06179 8.3651C6.80479 8.3651 6.55356 8.28889 6.33987 8.14611C6.12619 8.00333 5.95964 7.80039 5.86128 7.56295C5.76294 7.32551 5.7372 7.06424 5.78734 6.81218C5.83748 6.56012 5.96124 6.32858 6.14296 6.14685C6.32469 5.96513 6.55623 5.84137 6.80829 5.79123C7.06035 5.74109 7.32162 5.76683 7.55906 5.86518C7.7965 5.96353 7.99944 6.13008 8.14222 6.34376C8.285 6.55745 8.36121 6.80868 8.36121 7.06568C8.36082 7.41019 8.22378 7.74047 7.98018 7.98407C7.73658 8.22768 7.4063 8.36471 7.06179 8.3651Z" fill="white" />
