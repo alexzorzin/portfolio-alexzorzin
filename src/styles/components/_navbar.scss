@@ -34,7 +34,7 @@ header{
     color: rgb(255, 255, 255)!important;
   }
   .nav__menu-list {
-    color: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0)!important;
   }
 }
 .logo{
@@ -70,7 +70,7 @@ header{
   transition: all 0.2s;
   min-height: calc(35vh - 60px);
   background-color: #222;
-  color: #000000;
+  color: #ffffff;
   padding-bottom: 60px;
 }
 .nav__menu-list.active{
