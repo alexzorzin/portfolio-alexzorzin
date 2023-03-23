@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { useFetch } from "@/hooks/useFetch";
 import CardProjects from "./CardProjects";
-import { useApiContext } from "./context/Context";
+import { useApiContext } from "../hooks/useContext";
 import english from './languages/en/global.json';
 import spanish from './languages/es/global.json';
 

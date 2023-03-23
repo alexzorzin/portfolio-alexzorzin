@@ -1,5 +1,5 @@
 import React from "react";
-import { useApiContext } from "./context/Context";
+import { useApiContext } from "../hooks/useContext";
 import english from './languages/en/global.json';
 import spanish from './languages/es/global.json';
 const Presentation = () => {
@@ -10,7 +10,7 @@ const Presentation = () => {
             <section className="masthead text-center text-white">
                 <div className="masthead-content col-12">
                     <div className="container">
-                        <div className="center">
+                        <div className="center height--loading">
                             <img className="me" src="/img/alex.webp" alt="me" />
                         </div>
                         <h1 className="masthead-heading-home mb-3">{language === 'es' ? `${spanish?.presentation?.title}` : `${english?.presentation?.title}`}</h1>

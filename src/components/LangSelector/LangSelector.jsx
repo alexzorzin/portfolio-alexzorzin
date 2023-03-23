@@ -1,5 +1,5 @@
 import React from "react";
-import { useApiContext } from "../context/Context";
+import { useApiContext } from "../../hooks/useContext";
 
 const LanguageSelector = () => {
   const { language, setLanguage } = useApiContext();

@@ -9,6 +9,7 @@
       hsl(var(--hue), 95%, 99%),
       hsl(var(--hue), 95%, 84%));
   scroll-behavior: initial;
+  --bs-body-bg: #222!important;
 }
 
 * {
@@ -30,8 +31,8 @@ body {
   place-items: center;
   font-family: var(--font-family);
   color: var(--dark-color);
-  background: -webkit-gradient(linear, left top, left bottom, from(#202020), to(#202020));
-  background: linear-gradient(#202020, #202020);
+  background: -webkit-gradient(linear, left top, left bottom, from(#202020), to(#202020)) !important;
+  background: linear-gradient(#202020, #202020) !important;
 }
 
 .orb-canvas {
@@ -573,6 +574,15 @@ select::-ms-expand {
   display: none;
 }
 
+#dropdown-basic,
+#dropdown-basic:hover,
+#dropdown-basic:focus,
+#dropdown-basic:active {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 #loader {
   height: 100vh;
   width: 100vw;
@@ -764,6 +774,26 @@ span:nth-child(2) {
 @media (min-height: 768px) {
   .height-page {
     height: 100vh !important;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn 5s ease forwards;
+          animation: fadeIn 5s ease forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
 
@@ -1376,5 +1406,9 @@ html body {
     scroll-margin-top: 7.5em;
     height: 100vh;
   }
+}
+
+.height--loading {
+  min-height: 18.5em;
 }
 /*# sourceMappingURL=app.css.map */

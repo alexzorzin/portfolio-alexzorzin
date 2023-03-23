@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import NavItem from "./NavItem";
-import { useApiContext } from "./context/Context";
+import { useApiContext } from "../hooks/useContext";
 import english from './languages/en/global.json';
 import spanish from './languages/es/global.json';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Loader from "./Loader";
 
-const Navbar = () => {
+const Navbar = ({loading, setLoading}) => {
   const { language, setLanguage } = useApiContext();
   const capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -29,11 +30,13 @@ const Navbar = () => {
   function languages(lang) {
     setLanguage(lang);
     localStorage.setItem('lang', JSON.stringify(lang));
-    const contenedor = document.getElementById('loader');
+    // const contenedor = document.getElementById('loader');
     navIconClick()
-    contenedor.style.visibility = "initial";
+    // contenedor.style.visibility = "initial";
+    setLoading(true);
     setTimeout(() => {
-      contenedor.style.visibility = "hidden";
+      // contenedor.style.visibility = "hidden";
+      setLoading(false);
     }, 1500);
   }
   const [navActive, setNavActive] = useState(null);
@@ -69,64 +72,74 @@ const Navbar = () => {
 
 
   return (
-    <header id="home">
-      <nav className={navbar ? 'navbar active' : 'navbar'}>
-
-        <div className="logo">
-          <a className="text-decoration-none" href="#home">
-            <h1>&lt; Z O R Z I N / &gt;</h1>
-          </a>
-        </div>
-
-        <div
-          onClick={() => setNavActive(!navActive)}
-          className={`nav__menu-bar`}
-        >
-          {navbar ? whiteSVG : whiteSVG}
-
-        </div>
+    <>
+      {
+        loading === false ?
 
 
-        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+          <header id="home">
+            <nav className={navbar ? 'navbar active' : 'navbar'}>
 
-          {MENU_LIST.map((menu, idx) => (
-            <div
-              onClick={() => {
-                setActiveIdx(idx);
-                setNavActive(false);
-              }}
-              key={menu.text}
-            >
-              <NavItem active={activeIdx === idx} {...menu} />
-            </div>
-          ))}
-          {language === 'es'
-            ?
-            <Dropdown>
-              <Dropdown.Toggle className="language-selector text-uppercase" id="dropdown-basic">
-                {language}
-              </Dropdown.Toggle>
+              <div className="logo">
+                <a className="text-decoration-none" href="#home">
+                  <h1>&lt; Z O R Z I N / &gt;</h1>
+                </a>
+              </div>
 
-              <Dropdown.Menu>
-                <Dropdown.Item onClick={() => languages('en')}>EN</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+              <div
+                onClick={() => setNavActive(!navActive)}
+                className={`nav__menu-bar`}
+              >
+                {navbar ? whiteSVG : whiteSVG}
 
-            :
+              </div>
 
-            <Dropdown>
-              <Dropdown.Toggle className="language-selector text-uppercase" id="dropdown-basic">
-                {language}
-              </Dropdown.Toggle>
 
-              <Dropdown.Menu>
-                <Dropdown.Item onClick={() => languages('es')}>ES</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          }
-        </div>
-      </nav>
-    </header>
+              <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+
+                {MENU_LIST.map((menu, idx) => (
+                  <div
+                    onClick={() => {
+                      setActiveIdx(idx);
+                      setNavActive(false);
+                    }}
+                    key={menu.text}
+                  >
+                    <NavItem active={activeIdx === idx} {...menu} />
+                  </div>
+                ))}
+                {language === 'es'
+                  ?
+                  <Dropdown>
+                    <Dropdown.Toggle className="language-selector text-uppercase" id="dropdown-basic">
+                      {language}
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item onClick={() => languages('en')}>EN</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+
+                  :
+
+                  <Dropdown>
+                    <Dropdown.Toggle className="language-selector text-uppercase" id="dropdown-basic">
+                      {language}
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item onClick={() => languages('es')}>ES</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                }
+              </div>
+            </nav>
+          </header>
+
+
+          :
+          <Loader loading={loading} />}
+    </>
   );
 };
 

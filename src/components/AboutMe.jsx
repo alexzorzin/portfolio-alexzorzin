@@ -38,7 +38,7 @@
 // export default AboutMe;
 
 import React from "react";
-import { useApiContext } from "./context/Context";
+import { useApiContext } from "../hooks/useContext";
 import english from './languages/en/global.json';
 import spanish from './languages/es/global.json';
 
