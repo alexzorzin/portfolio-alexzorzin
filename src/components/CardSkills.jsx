@@ -12,6 +12,7 @@ const CardSkills = ({ name, image, category }) => {
                         <img loading="lazy"
                             className="img-circle"
                             src={urlImage}
+                            alt={name}
                         />
                     </div>
                     <div className="content">
