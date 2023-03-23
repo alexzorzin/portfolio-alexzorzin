@@ -36,7 +36,7 @@ export default function Home() {
         <meta name="description" content="Hello! I'm Alex Zorzin, a Full-Stack Web Developer from Buenos Aires, argentina. Welcome to my portfolio." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#222" />
-        <meta name="keywords" content="Alex Zorzin Portfolio Full-Stack Front-End Back-End Web Developer React JS JavaScript Next NodeJS CSS HTML projects skills"/>
+        <meta name="keywords" content="Alex Zorzin Portfolio Full-Stack Front-End Back-End Web Developer React JS JavaScript Next NodeJS CSS HTML Projects Skills"/>
         <meta name="author" content="alexzorzin.dev@gmail.com"/>
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
         <link rel="canonical" href=""/>
