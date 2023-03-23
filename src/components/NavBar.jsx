@@ -6,7 +6,8 @@ import spanish from './languages/es/global.json';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Loader from "./Loader";
 
-const Navbar = ({loading, setLoading}) => {
+const Navbar = () => {
+  const [loading, setLoading] = useState(false);
   const { language, setLanguage } = useApiContext();
   const capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -36,6 +37,8 @@ const Navbar = ({loading, setLoading}) => {
     setLoading(true);
     setTimeout(() => {
       // contenedor.style.visibility = "hidden";
+      const html = document.getElementsByTagName('html')[0];
+        html.style.overflow = "initial";
       setLoading(false);
     }, 1500);
   }
@@ -81,7 +84,7 @@ const Navbar = ({loading, setLoading}) => {
             <nav className={navbar ? 'navbar active' : 'navbar'}>
 
               <div className="logo">
-                <a className="text-decoration-none" href="#home">
+                <a className="text-decoration-none" href="#">
                   <h1>&lt; Z O R Z I N / &gt;</h1>
                 </a>
               </div>

@@ -5,7 +5,7 @@ const CardProjects = ({ name, description, tech, image, deploy, repository }) =>
     return (
         <>
             <div className=" card-project ">
-                <img
+                <img loading="lazy"
                     className="card-image rounded"
                     src={urlImage}
                     alt="Project made by Alex Zorzin"

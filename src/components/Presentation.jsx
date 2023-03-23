@@ -11,7 +11,7 @@ const Presentation = () => {
                 <div className="masthead-content col-12">
                     <div className="container">
                         <div className="center height--loading">
-                            <img className="me" src="/img/alex.webp" alt="me" />
+                            <img loading="lazy" className="me" src="/img/alex.webp" alt="me" />
                         </div>
                         <h1 className="masthead-heading-home mb-3">{language === 'es' ? `${spanish?.presentation?.title}` : `${english?.presentation?.title}`}</h1>
                         <p className="masthead-subheading mb-0">{language === 'es' ? `${spanish?.presentation?.subtitle}` : `${english?.presentation?.subtitle}`}</p>

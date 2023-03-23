@@ -13,7 +13,7 @@
 //                 <h1 className="display-3 mb-4 ms-5  pt-5 text-white">SOBRE MÍ</h1></div>
 //                     <div className="row gx-5 align-items-center">
 //                         <div className="col-lg-6 col-12 order-lg-2">
-//                             <img className="p-5 ms-4 ms-sm-5 mb-5 img-fluid w-75"
+//                             <img loading="lazy" className="p-5 ms-4 ms-sm-5 mb-5 img-fluid w-75"
 //                                 src="/img/computer.webp" alt="..." />
 //                                 </div>
 
@@ -56,7 +56,7 @@ const AboutMe = () => {
           </div>
           <div className="row gx-5 align-items-center">
             <div className="col-lg-6 col-12 order-lg-2">
-              <img
+              <img loading="lazy"
                 className="p-5 ms-4 ms-sm-5 mb-5 img-fluid w-75"
                 src="/img/computer.webp"
                 alt="computer"

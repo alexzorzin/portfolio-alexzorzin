@@ -53,20 +53,20 @@ export default function Home() {
       <Loader loading={loading} />
       <canvas className="orb-canvas"></canvas>
       <UseContextProvider>
-        {loading === false ?
+        {/* {loading === false ? */}
           <>
             <LanguageSelector />
-            <NavBar {...{ loading, setLoading }} />
+            <NavBar />
             <Presentation />
             <AboutMe />
             <Projects />
             <Skills />
             <Contact />
           </>
-          :
-          null
+        {/* //   :
+        //   null */}
 
-        }
+        {/* // } */}
       </UseContextProvider>
       <script type="module" src="./js/Bg-gradient.js"></script>
     </>

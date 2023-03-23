@@ -9,7 +9,7 @@ const CardSkills = ({ name, image, category }) => {
                     
                     <div className="cover"></div>
                     <div className="user">
-                        <img
+                        <img loading="lazy"
                             className="img-circle"
                             src={urlImage}
                         />

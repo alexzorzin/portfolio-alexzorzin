@@ -47,7 +47,7 @@ const Projects = () => {
                             },
                         }}
                     >
-                        {data?.projects?.map((project) => (
+                        {data?.projects?.length > 0 ? data?.projects?.map((project) => (
                             <SwiperSlide key={project.id} className="card-project">
 
                                 <CardProjects
@@ -60,7 +60,12 @@ const Projects = () => {
                                 />
 
                             </SwiperSlide>
-                        ))}
+                        ))
+                    :
+                    <div className="center">
+                    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                    </div>
+                    }
                     </Swiper>
                 </div>
             </section>
