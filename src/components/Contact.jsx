@@ -61,7 +61,7 @@ const Contact = () => {
                     <button type="submit" className="custom-btn-contact btn-16 btn btn-light btn-sm  container ">
                     {language === 'es' ? `${spanish?.contact?.input4}` : `${english?.contact?.input4}`}
                     </button>
-                    <input type="hidden" name="_next" value="http://localhost:3000/"></input>
+                    <input type="hidden" name="_next" value="https://portfolio-alexzorzin.vercel.app/"></input>
                     <input type="hidden" name="_captcha" value="false"></input>
                 </form>
                 <div></div>
